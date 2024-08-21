@@ -1,0 +1,15 @@
+syntax="proto3";
+package proto;
+option go_package="./;proto";
+
+service HealthCheck{
+    rpc HealthCheckAPI(HealthCheckAPIRequest) returns (HealthCheckAPIResponse);
+}
+
+message HealthCheckAPIRequest {
+    int64 time_duration = 1;
+}
+
+message HealthCheckAPIResponse {
+    string message = 1;
+}

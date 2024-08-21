@@ -1,0 +1,31 @@
+app:
+  env: PROD
+  name: go-rest-example
+  port: 8080
+  logFormat: text
+  timeout: 60s
+postgres:
+  master:
+    dbName: {{vault_db.master_dbname}}
+    host: {{vault_db.master_host}}
+    password: {{vault_db.master_password}}
+    port: {{vault_db.master_port}}
+    schema: {{vault_db.master_schema}}
+    user: {{vault_db.master_user}}
+    debug: false
+  slave:
+    dbName: {{vault_db.slave_dbname}}
+    host: {{vault_db.slave_host}}
+    password: {{vault_db.slave_password}}
+    port: {{vault_db.slave_port}}
+    schema: {{vault_db.slave_schema}}
+    user: {{vault_db.slave_user}}
+    debug: false
+  maxIdleConnections: 10
+  maxOpenConnections: 10
+  setConMaxIdleTime: 10
+  connectTimeout: 10
+redis:
+  host: localhost:6379
+  db: 0
+  password:
