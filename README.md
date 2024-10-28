@@ -6,7 +6,7 @@ This is a new template repository for create web service
   	Some illustration : 
 	![images](https://blog.janetacarr.com/content/images/size/w2000/2023/04/Architecture-and-Design-diagrams---Page-4-2.png "a title")
 	More explanation about this architecture you can learn from this : 
-	- [Port And Adapter Architecture](https://codesoapbox.dev/ports-adapters-aka-hexagonal-architecture-explained/) 
+	- [Port and Adapter Architecture](https://codesoapbox.dev/ports-adapters-aka-hexagonal-architecture-explained/) 
 	- [Another Port and Adapter Architecture](https://medium.com/wearewaes/ports-and-adapters-as-they-should-be-6aa5da8893b)
 
 - Frameworks / tools : 
